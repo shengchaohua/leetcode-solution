@@ -5,14 +5,12 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        res = []
         for i, num1 in enumerate(nums):
             for j, num2 in enumerate(nums):
-                if num1 + num2 == target and i != j:
-                    res = [i, j]
+                if num1 + num2 == target and j > i:
+                    return [i,j]  
                 else:
-                    continue
-        return sorted(res)
+                     continue
 
 def main():
     solution = Solution()
