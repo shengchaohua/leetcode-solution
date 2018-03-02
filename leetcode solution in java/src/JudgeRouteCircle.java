@@ -1,7 +1,7 @@
 public class JudgeRouteCircle {
 
 	public static boolean judgeCircle(String moves) {
-		int UDnum = 0, LFnum= 0; 
+		int UDnum = 0, LRnum= 0; 
 		for (int i = 0; i < moves.length(); i++) {
 			switch (moves.charAt(i)) {
 			case 'U':
@@ -11,16 +11,16 @@ public class JudgeRouteCircle {
 				UDnum--;
 				break;
 			case 'L':
-				LFnum++;
+				LRnum++;
 				break;
 			case 'R':
-				LFnum--;
+				LRnum--;
 				break;
 			default:
 				break;
 			}
 		}
-		return UDnum == 0 && LFnum == 0;
+		return UDnum == 0 && LRnum == 0;
 	}
 
 	public static void main(String[] args) {
