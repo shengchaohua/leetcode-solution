@@ -11,7 +11,7 @@ Because nums[0] + nums[1] = 2 + 7 = 9,return [0, 1].
 @author: shengchaohua
 """
 
-class Solution:
+class TwoSum:
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
@@ -26,10 +26,10 @@ class Solution:
                      continue
 
 def main():
-    solution = Solution()
+    ts = TwoSum()
     nums = [2, 7, 11, 15]
     target = 13
-    print(solution.twoSum(nums, target))
+    print(ts.twoSum(nums, target))
 
 if __name__ == '__main__':
     main()
