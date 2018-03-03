@@ -1,5 +1,3 @@
-
-
 public class ReverseString {
 	public String reverseString(String s) {
         StringBuffer str = new StringBuffer();
@@ -15,5 +13,4 @@ public class ReverseString {
 		String s = new String("hello");
 		System.out.println(rs.reverseString(s));
 	}
-
 }
