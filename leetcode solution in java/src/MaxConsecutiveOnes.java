@@ -31,7 +31,7 @@ public class MaxConsecutiveOnes {
             sum += nums[i];
             if(nums[i] == 0) {   // reset sum to zero when encounters zeros
                 sum = 0;
-            } else {                // keep update max
+            } else {             // keep update max
                 max = Math.max(max, sum);
             }
         }
