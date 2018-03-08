@@ -1,4 +1,4 @@
-public class MoveZeros {
+public class MoveZeroes {
 	public void moveZeroes(int[] nums) {
 		int len = nums.length;
 		for (int i = 0; i < len; i++) {
@@ -25,7 +25,7 @@ public class MoveZeros {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] nums = { 0, 1, 0, 3, 12, 11, 0, 9, 0};
-		MoveZeros mz = new MoveZeros();
+		MoveZeroes mz = new MoveZeroes();
 		mz.moveZeroes(nums);
 	}
 
