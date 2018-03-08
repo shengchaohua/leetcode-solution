@@ -1,6 +1,6 @@
 public class BestTimetoBuyandSellStockII {
 
-	public static int maxProfit(int[] prices) {
+	public int maxProfit(int[] prices) {
 		if (prices == null || 0 == prices.length) 
             return 0;  
         int minPrice  = prices[0];  

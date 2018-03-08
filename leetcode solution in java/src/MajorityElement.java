@@ -1,10 +1,5 @@
-
-
-import java.util.ArrayList;
-import java.util.Iterator;
-
 public class MajorityElement {
-	public static int majorityElement(int[] nums) {
+	public int majorityElement(int[] nums) {
 		int thisTime = 0;
 		int result = 0;
 		for (int i = 0; i < nums.length; i++) {

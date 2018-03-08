@@ -1,5 +1,3 @@
-import com.sun.org.apache.bcel.internal.generic.LAND;
-
 public class IslandPerimeter {
     public int calPerimeter(int[][] grid) {
     	int lineNum = grid.length;
