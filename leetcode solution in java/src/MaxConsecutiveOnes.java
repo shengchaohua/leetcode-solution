@@ -1,6 +1,11 @@
 public class MaxConsecutiveOnes {
+	/**
+	 * @author shengchaohua
+	 * @param nums
+	 * @return max consecutive ones  
+	 */
 	public int findMaxConsecutiveOnes(int[] nums) {
-        int oneNum = 0;
+        int max = 0;
         int tempNum = 0;
         int len = nums.length;
         for (int i = 0; i < len; i++) {
@@ -13,11 +18,24 @@ public class MaxConsecutiveOnes {
         				break;
         			}
         		}
-        		oneNum = tempNum > oneNum ? tempNum : oneNum;
+        		max = tempNum > max ? tempNum : max;
         	} 
         }
-		
-		return oneNum;
+		return max;
+    }
+	
+	public int findMaxConsecutiveOnes_better(int[] nums) {
+        int max = 0;
+        int sum = 0;
+        for(int i = 0 ; i< nums.length; i ++){
+            sum += nums[i];
+            if(nums[i] == 0) {   // reset sum to zero when encounters zeros
+                sum = 0;
+            } else {             // keep update max
+                max = Math.max(max, sum);
+            }
+        }
+        return max;
     }
 	
 	public static void main(String[] args) {
