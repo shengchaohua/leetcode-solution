@@ -9,9 +9,7 @@ public class SpecialCharacters {
 		for (int i = length - 2; i >= 0; i--) {
 			if (bits[i] == 1) {
 				numOne++;
-				if (numOne == 2) {
-					numOne = 0;
-				}
+				numOne %= 2;
 			} else {
 				break;
 			}
