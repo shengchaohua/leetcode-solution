@@ -13,21 +13,17 @@ class SpecialCharacters:
         :type bits: List[int]
         :rty
         """
-        length = len(bits)
-        if bits[length - 1] == 1:
-            return False
         bits.pop()  
         oneNum = 0
         while True:
             if not bits:
                 break
-            bit = bits.pop()
-            if bit == 1:
+            if bits.pop() == 1:
                 oneNum += 1
                 oneNum %= 2
             else:
                 break
-        return True if oneNum == 0 else False    
+        return oneNum == 0  
     
 def main():
     bits = [1, 1, 0, 0, 0]

@@ -1,12 +1,8 @@
 
 public class SpecialCharacters {
 	public boolean isOneBitCharacter(int[] bits) {
-		int length = bits.length;
-		if (bits[length - 1] == 1){
-			return false;
-		}
 		int oneNum = 0;
-		for (int i = length - 2; i >= 0; i--) {
+		for (int i = bits.length - 2; i >= 0; i--) {
 			if (bits[i] == 1) {
 				oneNum++;
 				oneNum %= 2;
@@ -14,7 +10,7 @@ public class SpecialCharacters {
 				break;
 			}
 		}
-		return oneNum == 0 ? true : false;
+		return oneNum == 0;
     }
 	
 	public static void main(String[] args) {
