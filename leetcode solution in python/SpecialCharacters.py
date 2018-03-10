@@ -15,9 +15,7 @@ class SpecialCharacters:
         """
         bits.pop()  
         oneNum = 0
-        while True:
-            if not bits:
-                break
+        while bits:
             if bits.pop() == 1:
                 oneNum += 1
                 oneNum %= 2
