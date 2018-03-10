@@ -5,16 +5,16 @@ public class SpecialCharacters {
 		if (bits[length - 1] == 1){
 			return false;
 		}
-		int numOne = 0;
+		int oneNum = 0;
 		for (int i = length - 2; i >= 0; i--) {
 			if (bits[i] == 1) {
-				numOne++;
-				numOne %= 2;
+				oneNum++;
+				oneNum %= 2;
 			} else {
 				break;
 			}
 		}
-		return numOne == 0 ? true : false;
+		return oneNum == 0 ? true : false;
     }
 	
 	public static void main(String[] args) {
