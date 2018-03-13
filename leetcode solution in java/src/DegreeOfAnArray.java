@@ -5,11 +5,13 @@ import java.util.Map;
 
 public class DegreeOfAnArray {
 	public int findShortestSubArray(int[] nums) {
-        Map<Integer, Integer> numFreq = new HashMap<>();
+        // 建立map, 统计每个数字的频率
+		Map<Integer, Integer> numFreq = new HashMap<>();
         for (int num : nums) {
         	numFreq.put(num, numFreq.getOrDefault(num, 0)+1);
         }
         
+        // 寻找频率最大的所有数字
         int maxFreq = 0;
         List<Integer> list = new ArrayList<>();
         for (Map.Entry<Integer, Integer> item : numFreq.entrySet()) {
@@ -22,6 +24,7 @@ public class DegreeOfAnArray {
         	}
         }
         
+        // 计算频率最大的数字的距离，取最小
         int smallertLen = Integer.MAX_VALUE;
         for (int i = 0; i < list.size(); i++) {
         	int mostFreqNum = list.get(i); 
