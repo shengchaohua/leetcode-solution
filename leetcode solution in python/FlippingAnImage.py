@@ -18,6 +18,9 @@ class Solution:
             row.reverse()
             res.append([1-x for x in row])
         return res
+    
+    def betterFlip(self, A):
+        return [[1 ^ i for i in row[::-1]] for row in A]
 
 def main():
     s = Solution()
