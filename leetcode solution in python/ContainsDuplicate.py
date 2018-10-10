@@ -15,9 +15,20 @@ class ContainsDuplicate:
         """
         return len(nums) != len(set(nums))
     
+    
+    def containsDuplicate_hash(self, nums):
+        s = set()
+        for n in nums:
+            if n in s:
+                return True
+            s.add(n)
+        return False
+        
+    
 def main():
     cd = ContainsDuplicate()
     print(cd.containsDuplicate([1,2,3,4,4]))
+    print(cd.containsDuplicate_hash([1,2,3,4,4]))
     
 if __name__ == '__main__':
     main()
