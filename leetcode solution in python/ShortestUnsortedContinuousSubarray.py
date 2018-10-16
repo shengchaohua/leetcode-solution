@@ -13,6 +13,7 @@ class Solution:
         :type nums: List[int]
         :rtype: int
         """
+        # Wrong Answer
         i = 0
         while i < len(nums)-1 and nums[i] <= nums[i+1]:
             i += 1
