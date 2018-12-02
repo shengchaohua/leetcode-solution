@@ -22,7 +22,7 @@ class Solution:
             if 0 <= hours < 24 and 0 <= mins < 60 and time > ans:
                 ans = time
 
-        return "{:02}:{:02}".format(*divmod(ans, 60)) if ans >= 0 else ""
+        return "{:02d}:{:02d}".format(*divmod(ans, 60)) if ans >= 0 else ""
     
     
 def test():
