@@ -7,7 +7,6 @@ Created on Sat Jan 19 17:29:36 2019
 @author: shengchaohua
 """
 
-
 # Definition for a QuadTree node.
 class Node:
     def __init__(self, val, isLeaf, topLeft, topRight, bottomLeft, bottomRight):
