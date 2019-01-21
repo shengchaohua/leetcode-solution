@@ -32,8 +32,7 @@ class Solution:
                 values.append(node.val)
                 node = node.right
         
-        return abs(min([values[i]-values[i+1] for i in range(len(values)-1)],
-                        key=abs))
+        return min([values[i+1]-values[i] for i in range(len(values)-1)])
         
         # Solution from @aosingh
 #        diff = float('inf') # Largest possible difference
