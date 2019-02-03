@@ -10,7 +10,7 @@ Created on Sun Feb  3 11:06:46 2019
 class Solution:
     def sumEvenAfterQueries(self, A: 'List[int]', queries: 'List[List[int]]') -> 'List[int]':
         evens = [n for n in A if n % 2 == 0]
-        even_sum = sum(evens) if evens else 0
+        even_sum = sum(evens)
         res = []
         for query in queries:
             val, idx = query[0], query[1]
