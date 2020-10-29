@@ -6,3 +6,4 @@ This folder is actually a project created by Eclipse. The version of Java is SE8
 
 ## leetcode solution in python
 This folder contains source file in Python. The version of Python is 3.6.3.
+
